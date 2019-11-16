@@ -1,0 +1,144 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Avenir', sans-serif;
+
+}
+
+/*----Navigation-----*/
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img {
+	height: 40px;
+	padding-left: 30px;
+}
+.navbar-nav li {
+	padding: 0 10px;
+}
+.navbar-nav li a {
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover {
+	color: #000!important;
+}
+.navbar {
+	background: #fff;
+}
+.navbar-toggler {
+	border: none!important;
+}
+.nav-link {
+	font-family: 'Allerta stencil', sans-serif;
+	color: #555!important;
+	font-weight: 500;
+	font-size: 18px;
+}
+/*-----Slider-----*/
+#slider {
+	width: 100%;
+
+}
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial!important;
+}
+.carousel-caption h5 {
+	color: #fff;
+	font-size: 42px;
+	font-family: 'Avenir', sans-serif;
+}
+
+#slider img {
+	width: 100%;
+	height:auto;
+	opacity: 0.8;
+	background: #000;
+}
+* {box-sizing: border-box;}
+
+
+h1 {
+	grid-row: 1 / 2;
+	font-family: 'Allerta stencil';
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	margin-top:3rem;
+	padding: 1rem;
+}
+
+
+article{
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive code */
+	margin: 20px;
+	padding-left: 80px;
+	padding-right: 80px;
+	color: #000;
+	font-family: 'Avenir';
+	float: inherit;
+}
+
+header {
+	color: hotpink;
+}
+
+.event-image{
+	grid-row: 2 / 3;
+}
+
+.desc{
+	font-family: 'Avenir';
+	display: grid;
+	grid-row: 3 / 4;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	padding-right: 80px;
+	padding-left: 80px;
+
+}
+li{
+list-style: none;
+}
+
+.timetable{
+	grid-row: 4 / 5;
+	font-size: 1.9rem;
+	padding-right: 100px;
+	padding-left: 100px;
+	font-family: 'Allerta stencil';
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+.extra_description {
+	grid-row:auto;
+	font-size: 1.3rem;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+.search{
+    width: 100%;
+	text-align:center;
+}
+#search1 {
+	 margin: 0 auto;
+    display: inline-block;
+}
+form {
+
+	padding-left: 80px;
+}

@@ -1,0 +1,204 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Avenir', sans-serif;
+}
+
+/*----Navigation-----*/
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img {
+	height: 40px;
+	padding-left: 30px;
+}
+.navbar-nav li {
+	padding: 0 10px;
+}
+.navbar-nav li a {
+	font-family: 'Allerta stencil';
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover {
+	color: #007bff!important;
+}
+.navbar {
+	background: #fff;
+}
+.navbar-toggler {
+	border: none!important;
+}
+.nav-link {
+	font-family: Avenir, sans-serif;
+	color: #555!important;
+	font-weight: 500;
+	font-size: 18px;
+}
+/*-----Slider-----*/
+#slider {
+	width: 100%;
+
+}
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial!important;
+}
+.carousel-caption h5 {
+	font-family: 'Avenir';
+	color: #fff;
+	font-size: 42px;
+}
+
+#slider img {
+	width: 100%;
+	height:auto;
+	opacity: 0.8;
+	background: #000;
+}
+
+.about-us {
+	margin: 3rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.about-us p {
+	margin-top: 2rem;
+	font-family: Avenir;
+	font-weight: 50;
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+.about-us h2 {
+	font-family: Avenir;
+	text-align: center;
+	text-decoration: underline;
+	color: rgb(100, 131, 131);
+}
+/* now comes the grid */
+.box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* i want to have 4 columns */
+	grid-template-rows: 100px 140px;
+}
+.Title {
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 0px;
+	font-family: Avenir, italic;
+}
+.Title h1{
+	font-family: 'Allerta stencil';
+}
+.entry {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	padding: 2rem;
+
+}
+.text2  {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.text1 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.content-main-div {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: auto;
+	background: lightgray;
+	margin-top: 5rem;
+	background: repeating-linear-gradient(120deg, rgb(211, 211, 211) 10%, rgb(173, 216, 230) 50%,
+	hsl(0, 0%, 99%) 30%,
+	hsl(0, 0%, 99%)
+		);
+	font-family: Avenir, italic;
+	font-size: 1.5rem;
+}
+.image-main img {
+	height: 25rem;
+	width: 30rem;
+	margin-bottom: 2rem;
+	float: right;
+    margin: 100px;
+}
+
+.content-main h2 {
+	font-family: 'Allerta stencil';
+	text-transform: uppercase;
+	color: rgb(86, 126, 126);
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 10px;
+	margin-right: 200px;
+
+}
+.content-main p {
+
+	padding: 2rem;
+	float: left;
+	margin-top: 0;
+	margin-right: 200px;
+}
+.title h1 {
+	font-family: 'Allerta stencil';
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+.title {
+	display: block;
+}
+
+article{
+display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1{
+	grid-row: 1 / 2;
+}
+
+.event-image{
+	grid-row: 2 / 3;
+}
+
+.desc{
+	grid-row: 3 / 4;
+}
+
+.timetable{
+	grid-row: 4 / 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
