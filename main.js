@@ -80,32 +80,26 @@ fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/event/")
 
 function handleData(myData){
 	//console.log(myData);
-	myData.forEach(showPost)
+	myData.forEach(showPost);
+    const postCopy = document.querySelector(".postTemplate").content;
+	postCopy.cloneNode(true);
 }
 
 function showPost(post){
 	console.log(post)
-	const imgPath = postCopy.querySelector(".cover")[0].media_details.sizes.thumbnail.source_url;
+
 
 	const template = document.querySelector(".postTemplate").content;
 	const postCopy = template.cloneNode(true);
 	//text content & inner Html
-	const h1 = postCopy.querySelector("h1");
+	var h1 = postCopy.querySelector("h1");
 	h1.textContent=post.title.rendered;
 
 	const img = postCopy.querySelector(".cover");
 
-	img.setAttribute("src", imgPath)
-	img.setAttribute("alt", "Post" + post.title.rendered)
 
 	const a = postCopy.querySelector("a");
 	a.href="sub.html?id="+post.id
-
-	const desc = postCopy.querySelector("p.desc")
-}
-
-   const h1 = postCopy.querySelector("h1");
-    h1.textContent = post.title.rendered
 
     const desc = postCopy.querySelector(".desc");
     desc.innerHTML = post.content.rendered
@@ -131,7 +125,7 @@ function showPost(post){
     const event_video = postCopy.querySelector(".event_video");
     event_video.src = post.event_video
 
-
+}
 
 
 

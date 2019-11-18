@@ -56,6 +56,12 @@ body {
 	font-family: 'Avenir', sans-serif;
 }
 
+.carousel-indicators > li {
+	border-radius: 50%;
+	border:1px solid grey;
+	height: 30px!important;
+}
+
 #slider img {
 	width: 100%;
 	height:auto;
