@@ -1,8 +1,10 @@
 window.addEventListener("DOMContentLoaded", getData);
 
+
+
 function getData(){
     console.log("getData")
-    fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/event?_embed&categories=8&=100")
+    fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/event?_embed&per_page=100")
     .then(res=>res.json())
     .then(handleData)
 }
@@ -41,9 +43,12 @@ function showpost(post){
 
     const timetable = postCopy.querySelector(".timetable");
     timetable.textContent = post.timetable
-
+	console.log(post.event_video);
+    if(post.event_video) {
     const event_video = postCopy.querySelector(".event_video");
     event_video.src = post.event_video
+	}
 
     document.querySelector("#posts").appendChild(postCopy)
 }
+

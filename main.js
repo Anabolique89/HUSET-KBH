@@ -23,7 +23,7 @@ function init(){
   }
 
 function getNavigation(){
-	fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/categories?per_page=100")
+	fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/categories?perPage=100")
 	.then(res=>res.json())
 	.then(data=>{
 		//console.log(data)
@@ -72,7 +72,7 @@ fetch("http://cosmicstryder.dk/wordpress/wp-json/wp/v2/event/")
 	 .then(res=>res.json())
 	 .then(showEvent)
 
-	function showEvent(Event){
+function showEvent(Event){
 		console.log(Event)
 		document.querySelector("article h1").textContent=Event.title.rendered
 	}
@@ -87,7 +87,6 @@ function handleData(myData){
 
 function showPost(post){
 	console.log(post)
-
 
 	const template = document.querySelector(".postTemplate").content;
 	const postCopy = template.cloneNode(true);
@@ -124,6 +123,8 @@ function showPost(post){
 
     const event_video = postCopy.querySelector(".event_video");
     event_video.src = post.event_video
+
+	document.querySelector("#posts").appendChild(postCopy)
 
 }
 

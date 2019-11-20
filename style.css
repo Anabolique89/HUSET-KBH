@@ -72,6 +72,15 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 
 }
+
+* {box-sizing: border-box;}
+
+.carousel-indicators > li {
+	border-radius: 50%;
+	border:1px solid grey;
+	height: 30px!important;
+}
+
 .about-us p {
 	margin-top: 2rem;
 	font-family: Avenir;
